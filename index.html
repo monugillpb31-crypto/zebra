@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zebra Wallpapers Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="topbar">
+    <div class="brand">🦓 Zebra Wallpapers</div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search..." />
+      <button id="favToggle">♥ Favourites</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="count">Loading...</div>
+    <div id="gallery" class="gallery"></div>
+    <div id="loader" class="loader">Loading more...</div>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lb-content">
+      <button id="lb-close">✕</button>
+      <img id="lb-img" alt="Wallpaper preview" />
+      <div class="lb-actions">
+        <a id="downloadBtn" href="#" download>Download</a>
+        <button id="lb-prev">◀</button>
+        <button id="lb-next">▶</button>
+        <button id="lb-fav">♡</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <small>Made by Monu 🖤 | Zebra Wallpapers Gallery</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
